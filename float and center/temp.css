@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.block {
+	width: 200px;
+	height: 200px;
+}
+
+.float { float: left; }
+/*clear both if had float right as well*/
+.clear { clear: left; }
+.pink { background: #ee3e64; }
+.blue { background: #44accf; }
+.green { background: #b7d84b; }
+.orange { background: #E2A741; }
+
+span {
+  /*margin and padding top/bottom have no effect on inline element*/
+  margin-top: 20px;
+  padding-bottom: 50px;
+  margin-left: 40px;
+}
+
+.parent {
+  height: 20vh;
+  width: 500px;
+  border: 1px solid black
+}
+
+.child {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20vh;
+  margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  border: 1px solid black
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

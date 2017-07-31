@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes slide-in {
+  0% {transform: translate(-300px, 0)}
+  100% {transform: translate(0, 0)}
+}
+
+@keyframes slide-out {
+  0% {transform: translate(0, 0)}
+  100% {transform: translate(-300px, 0)}
+}
+
+#slider {
+  position: fixed;
+  height: 500px;
+  width: 300px;
+  transform: translate(-300px, 0);
+  background-color: green;
+  color: white;
+}
+
+.animate-in {
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.animate-out {
+  animation-name: slide-out;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slide Show</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="slideshow.css">
+</head>
+<body>
+
+<div class="container">
+  <ul id="slides">
+    <li class="slide showing"><img src="https://unsplash.it/300/300?image=0" alt=""></li>
+    <li class="slide"><img src="https://unsplash.it/300/300?image=1" alt=""></li>
+    <li class="slide"><img src="https://unsplash.it/300/300?image=2" alt=""></li>
+  </ul>
+  <button class="controls" id="pause">&#10074;&#10074;</button>
+  <button class="controls" id="prev">&lt</button>
+  <button class="controls" id="next">&gt</button>
+  <div id="dots">
+    <span class="dot dot-selected" id="0"></span>
+    <span class="dot" id="1"></span>
+    <span class="dot" id="2"></span>
+  </div>
+</div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="slideshow.js"></script>
+</body>
+
+</html>

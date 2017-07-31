@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+tbody {
+  border: 1px solid black;
+}
+
+/*td {
+  height: 40px;
+  width: 60px;
+  background-color: lightgrey;
+  border: 1px solid black;
+  text-align: center;
+}*/
+
+td:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.toggleStyle {
+  background-color: lightblue;
+}
+
+.toggleStyle tr:nth-child(odd) {
+  display: none;
+}
+

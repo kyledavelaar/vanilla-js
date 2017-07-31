@@ -1,0 +1,38 @@
+#fade {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+
+.blue {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.orange {
+  color: orange;
+}
+
+#button{
+    display: inline-block;
+    height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+}
+
+#move {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  right: 0;
+}

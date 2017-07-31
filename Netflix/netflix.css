@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-top: 50px;
+  /* background-color: lightgrey; */
+  overflow: scroll;
+}
+
+.row-inner {
+  white-space: nowrap;  
+  transition: all 0.4s ease-in-out; 
+}
+
+.img-holder {
+  display: inline-block;
+  padding: 30px 5px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  /* need this or imgs won't be centered when you hover */ 
+  transform-origin: center left; 
+}
+
+.img-text {
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  opacity: 0;
+  transition: all 0.4s ease-in-out; 
+}
+
+.img-bg {
+  z-index: 2;
+  opacity: 0;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  transition: all 0.4s ease-in-out;  
+}
+
+.img {
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.img-holder:hover .img-text{
+  opacity: 1;
+}
+
+.img-holder:hover .img-bg{
+  opacity: .6;
+  transform: scale(1.15);
+}
+
+ .img-holder:hover .img {
+  transform: scale(1.15);
+} 
+
+/* use if want to make other imgs lighten */
+/*   .row-inner:hover .img-holder {
+  opacity: 0.3;
+}  */
+
+.row-inner:hover .img-holder:hover {
+  transform: scale(1.15);
+  opacity: 1;
+} 
+
+/* makes everything move left */
+.row-inner:hover .img-holder {
+  transform: translate3d(-10px, 0, 0);
+} 
+
+/* makes images to right of hovered img move right */
+.img-holder:hover ~ .img-holder {
+  transform: translate3d(40px, 0, 0);
+}

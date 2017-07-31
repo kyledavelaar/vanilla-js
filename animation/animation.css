@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@keyframes move {
+  0% {background-color: blue; left: 0px; top: 0px;}
+  25% {background-color: red; left: 100px; top: 0px;}
+  50% {background-color: green; left: 100px; top: 100px;}
+  75% {background-color: purple; left: 0px; top: 100px;}
+  100% {background-color: blue; left: 0px; top: 0px}
+}
+
+
+#blue {
+  position: relative;
+  /*height: 100px;
+  width: 100px;
+  background-color: blue;*/
+  animation-name: move;
+  animation-duration: 3s;
+  animation-delay: 0;
+  /*animation-iteration-count: infinite;*/
+  animation-direction: reverse;
+  animation-timing-function: ease;
+  /*to keep animation at last keyframe when done*/
+  animation-fill-mode: forwards;
+
+}
+
+
+/*perfectly centered*/
+#red {
+  background-color: red;
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#red p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
