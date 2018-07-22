@@ -1,0 +1,255 @@
+body {
+  display: flex;
+  /* background: #673ab7; */
+  height: 100vh;
+  width: 100vw;
+}
+
+#container {
+  height: 220px;
+  width: 220px;
+  /* background: lightgrey; */
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  border-radius: 4px;
+}
+
+div {
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+div:nth-child(1) {
+  animation: move1 2s ease 0s;
+  animation-fill-mode: forwards;
+  background: rgb(66, 126, 179);
+}
+div:nth-child(2) {
+  animation: move2 2s ease 4s;
+  animation-fill-mode: forwards;
+  background: rgb(77, 148, 209);
+}
+div:nth-child(3) {
+  animation: move3 2s ease 2s;
+  animation-fill-mode: forwards;
+  background: rgb(38, 73, 104);
+}
+div:nth-child(4) {
+  animation: move4 2s ease 1s;
+  animation-fill-mode: forwards;
+  background: rgb(25, 47, 66);
+
+}
+div:nth-child(5) {
+  animation: move5 2s ease 14s;
+  animation-fill-mode: forwards;
+  background: rgb(42, 80, 113);
+
+}
+div:nth-child(6) {
+  animation: move6 2s ease 12s;
+  animation-fill-mode: forwards;
+  background: rgb(12, 25, 36);
+
+}
+div:nth-child(7) {
+  animation: move7 2s ease 15s;
+  animation-fill-mode: forwards;
+  background: rgb(31, 59, 83);
+
+}
+div:nth-child(8) {
+  animation: move8 2s ease 3s;
+  animation-fill-mode: forwards;
+  background: rgb(34, 65, 92);
+}
+div:nth-child(9) {
+  animation: move9 2s ease 7s;
+  animation-fill-mode: forwards;
+  background: rgb(81, 155, 219);
+}
+div:nth-child(10) {
+  animation: move10 2s ease 13s;
+  animation-fill-mode: forwards;
+  background: rgb(22, 43, 61);
+}
+div:nth-child(11) {
+  animation: move11 2s ease 5s;
+  animation-fill-mode: forwards;
+  background: rgb(33, 64, 90);
+}
+div:nth-child(12) {
+  animation: move12 2s ease 11s;
+  animation-fill-mode: forwards;
+  background: rgb(66, 126, 179);
+}
+div:nth-child(13) {
+  animation: move13 2s ease 10s;
+  animation-fill-mode: forwards;
+  background: rgb(66, 126, 179);
+}
+div:nth-child(14) {
+  animation: move14 2s ease 8s;
+  animation-fill-mode: forwards;
+  background: rgb(51, 99, 141);
+}
+div:nth-child(15) {
+  animation: move15 2s ease 6s;
+  animation-fill-mode: forwards;
+  background: rgb(36, 70, 99);
+}
+div:nth-child(16) {
+  animation: move16 2s ease 9s;
+  animation-fill-mode: forwards;
+  background: rgb(76, 146, 207);
+}
+
+@keyframes move1 {
+  0% {transform: translate(-100px, -100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move2 {
+  0% {transform: translate(100px, -100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move3 {
+  0% {transform: translate(-100px, 100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move4 {
+  0% {transform: translate(100px, 100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move5 {
+  0% {transform: translate(-100px, -100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move6 {
+  0% {transform: translate(100px, -100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move7 {
+  0% {transform: translate(-100px, 100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move8 {
+  0% {transform: translate(100px, 100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move9 {
+  0% {transform: translate(-100px, -100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move10 {
+  0% {transform: translate(100px, -100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move11 {
+  0% {transform: translate(-100px, 100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move12 {
+  0% {transform: translate(100px, 100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move13 {
+  0% {transform: translate(-100px, -100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move14 {
+  0% {transform: translate(100px, -100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move15 {
+  0% {transform: translate(-100px, 100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+@keyframes move16 {
+  0% {transform: translate(100px, 100px); opacity: 0}
+  100% {transform: translate(0,0); opacity: 1}
+}
+
+
+/* 
+#container div {
+  position: absolute;
+  margin: auto;
+}
+
+#container div:nth-child(1) {
+  background: rgb(177, 235, 177);
+  animation: drop1 3s ease 0s;
+  animation-fill-mode: forwards;
+}
+#container div:nth-child(2) {
+  background: red;
+  animation: drop2 3s ease 3s;
+  animation-fill-mode: forwards;
+}
+#container div:nth-child(3) {
+  background: yellow;
+  animation: drop3 3s ease 6s;
+  animation-fill-mode: forwards;
+}
+#container div:nth-child(4) {
+  background: orange;
+  animation: drop4 3s ease 9s;
+  animation-fill-mode: forwards;
+}
+#container div:nth-child(5) {
+  background: lightblue;
+}
+#container div:nth-child(6) {
+  background: grey;
+}
+#container div:nth-child(7) {
+  background: blue;
+}
+#container div:nth-child(8) {
+  background: maroon;
+}
+
+@keyframes drop1 {
+  0% {height: 0; width: 10px}
+  20% {height: 50px; width: 10px}
+  30% {height: 50px; width: 50px}
+  40% {height: 50px; width: 50px; transform: translate(0,0)}  
+  60% {height: 50px; width: 50px; transform: translate(0px, 100px)}
+  80% {height: 50px; width: 50px; transform: translate(50px, 100px)}
+  100% {height: 50px; width: 50px; transform: translate(50px, 150px)}  
+}
+
+@keyframes drop2 {
+  0% {height: 0; width: 10px}
+  20% {height: 50px; width: 10px}
+  30% {height: 50px; width: 50px}
+  40% {height: 50px; width: 50px; transform: translate(0,0)}  
+  60% {height: 50px; width: 50px; transform: translate(0px, 100px)}
+  80% {height: 50px; width: 50px; transform: translate(150px, 100px)}
+  100% {height: 50px; width: 50px; transform: translate(150px, 150px)}  
+}
+
+@keyframes drop3 {
+  0% {height: 0; width: 10px}
+  20% {height: 50px; width: 10px}
+  30% {height: 50px; width: 50px; transform: translate(0,0)}
+  40% {height: 50px; width: 50px; transform: translate(50px,0)}  
+  60% {height: 50px; width: 50px; transform: translate(50px, 100px)}
+  80% {height: 50px; width: 50px; transform: translate(50px, 100px)}
+  100% {height: 50px; width: 50px; transform: translate(50px, 150px)}  
+}
+
+@keyframes drop4 {
+  0% {height: 0; width: 10px}
+  20% {height: 50px; width: 10px}
+  30% {height: 50px; width: 50px}
+  40% {height: 50px; width: 50px; transform: translate(0,0)}  
+  60% {height: 50px; width: 50px; transform: translate(0px, 100px)}
+  80% {height: 50px; width: 50px; transform: translate(100px, 100px)}
+  100% {height: 50px; width: 50px; transform: translate(100px, 150px)}  
+} */
