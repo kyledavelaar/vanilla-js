@@ -8,13 +8,26 @@ form.onsubmit = function (event) {
   let firstName = document.querySelector('#first').value;
   let lastName = document.querySelector('[name="last"]').value;
   //radio
-  let gender = document.querySelector('[name="gender"]:checked').value;
+  let gender = document.querySelectorAll('[name="gender"]');
+  let selectedGender;
+  for (let i = 0; i < gender.length; i += 1) {
+    if (gender[i].checked) {
+      selectedGender = gender[i].value;
+      break;
+    }
+  }
   //check box
-  let animal = document.querySelector('[name="animal"]:checked').value;
+  let animal = document.querySelectorAll('[name="animal"]');
+  let animals = [];
+  for (let i = 0; i < animal.length; i += 1) {
+    if (animal[i].checked) {
+      animals.push(animal[i].value);
+    }
+  }
   //select
   let plant = document.querySelector('[name="plants"]').value;
   
-  console.log(firstName, lastName, gender, animal, plant);
+  console.log(firstName, lastName, selectedGender, animals, plant);
 
   if (firstName === "" || lastName === "") return;
 
