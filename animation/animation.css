@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+#longhand {
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#shorthand {
+  animation: move 5s linear 2s infinite alternate;
+}
+
+
+/* ---------------------------------------- */
+
 
 @keyframes move {
   0% {background-color: blue; left: 0px; top: 0px;}

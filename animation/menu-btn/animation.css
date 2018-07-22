@@ -1,0 +1,62 @@
+
+#menu-btn {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  background-color: #f8d636;
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#menu-btn .menu-line {
+  display: inline-block;
+  width: 30%;
+  height: 2px;
+  background-color: #333;
+  position: relative;
+  top: -5px;
+}
+#menu-btn .menu-line::after, #menu-btn .menu-line::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  left: 0;
+  height: 2px;
+  background-color: #333;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#menu-btn .menu-line::after {
+  top: 4px;
+}
+#menu-btn .menu-line::before {
+  top: 8px;
+}
+
+#menu-btn.active .menu-line {
+  background-color: transparent;
+}
+#menu-btn.active .menu-line::before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 4px;
+}
+#menu-btn.active .menu-line::after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 4px;
+}
