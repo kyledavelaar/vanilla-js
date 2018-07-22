@@ -17,112 +17,112 @@ body {
   border-radius: 4px;
 }
 
-div {
+.animate {
   height: 50px;
   width: 50px;
   border-radius: 4px;
   opacity: 0;
 }
 
-div:nth-child(1) {
+.animate:nth-child(1) {
   animation: move1 2s ease 0s;
   animation-fill-mode: forwards;
   background: rgb(32, 61, 87);
 }
-div:nth-child(2) {
+.animate:nth-child(2) {
   animation: move2 2s ease 4s;
   animation-fill-mode: forwards;
   background: rgb(73, 141, 201);
 }
-div:nth-child(3) {
+.animate:nth-child(3) {
   animation: move3 2s ease 2s;
   animation-fill-mode: forwards;
   background: rgb(61, 117, 167);
 }
-div:nth-child(4) {
+.animate:nth-child(4) {
   animation: move4 2s ease 1s;
   animation-fill-mode: forwards;
   background: rgb(70, 132, 185);
 
 }
-div:nth-child(5) {
+.animate:nth-child(5) {
   animation: move5 2s ease 14s;
   animation-fill-mode: forwards;
   background: rgb(28, 58, 84);
 
 }
-div:nth-child(6) {
+.animate:nth-child(6) {
   animation: move6 2s ease 12s;
   animation-fill-mode: forwards;
   background: rgb(28, 58, 84);
 
 }
-div:nth-child(7) {
+.animate:nth-child(7) {
   animation: move7 2s ease 15s;
   animation-fill-mode: forwards;
   background: rgb(28, 58, 84);
 }
-div:nth-child(8) {
+.animate:nth-child(8) {
   animation: move8 2s ease 3s;
   animation-fill-mode: forwards;
   background: rgb(76, 143, 197);
 }
-div:nth-child(9) {
+.animate:nth-child(9) {
   animation: move9 2s ease 7s;
   animation-fill-mode: forwards;
   background: rgb(28, 58, 84);
 }
-div:nth-child(10) {
+.animate:nth-child(10) {
   animation: move10 2s ease 13s;
   animation-fill-mode: forwards;
   background: rgb(28, 58, 84);
 }
-div:nth-child(11) {
+.animate:nth-child(11) {
   animation: move11 2s ease 5s;
   animation-fill-mode: forwards;
   background: rgb(36, 69, 97);
 }
-div:nth-child(12) {
+.animate:nth-child(12) {
   animation: move12 2s ease 11s;
   animation-fill-mode: forwards;
   background: rgb(83, 155, 223);
 }
-div:nth-child(13) {
+.animate:nth-child(13) {
   animation: move13 2s ease 10s;
   animation-fill-mode: forwards;
   background: rgb(28, 58, 84);
 }
-div:nth-child(14) {
+.animate:nth-child(14) {
   animation: move14 2s ease 8s;
   animation-fill-mode: forwards;
   background: rgb(67, 128, 182);
 }
-div:nth-child(15) {
+.animate:nth-child(15) {
   animation: move15 2s ease 6s;
   animation-fill-mode: forwards;
   background: rgb(28, 58, 84);
 }
-div:nth-child(16) {
+.animate:nth-child(16) {
   animation: move16 2s ease 9s;
   animation-fill-mode: forwards;
   background: rgb(33, 62, 88);
 }
-div:nth-child(17) {
+.animate:nth-child(17) {
   animation: move17 2s ease 17s;
   animation-fill-mode: forwards;
   background: rgb(74, 145, 202);
 }
-div:nth-child(18) {
+.animate:nth-child(18) {
   animation: move18 2s ease 18s;
   animation-fill-mode: forwards;
   background: rgb(67, 128, 182);
 }
-div:nth-child(19) {
+.animate:nth-child(19) {
   animation: move19 2s ease 19s;
   animation-fill-mode: forwards;
   background: rgb(78, 150, 212);
 }
-div:nth-child(20) {
+.animate:nth-child(20) {
   animation: move20 2s ease 16s;
   animation-fill-mode: forwards;
   background: rgb(28, 58, 84);
