@@ -117,3 +117,18 @@ body {
   font-size: 3em;
   text-align: center;
 }
+
+/* perfect center */
+
+.center-parent {
+  background: green;
+  display: flex;
+  height: 300px;
+}
+
+.center-child {
+  background: orange;
+  width: 100px;
+  height: 100px; 
+  margin: auto;  /* Magic! */
+}
