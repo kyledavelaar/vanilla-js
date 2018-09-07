@@ -1,0 +1,119 @@
+body {
+  padding: 30px;
+  font: 400 14px/20px "Helvetica Neue", Helvetica,Arial,sans-serif;
+  color: #444;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* ------------------------------ */
+
+.uk-form input:not([type]), .uk-form input[type=text], .uk-form input[type=password], .uk-form input[type=email], .uk-form input[type=url], .uk-form input[type=search], .uk-form input[type=tel], .uk-form input[type=number], .uk-form input[type=datetime], .uk-form input[type=datetime-local], .uk-form input[type=date], .uk-form input[type=month], .uk-form input[type=time], .uk-form input[type=week], .uk-form input[type=color], .uk-form select, .uk-form textarea {
+  height: 30px;
+  max-width: 100%;
+  padding: 4px 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #444;
+  -webkit-transition: all linear .2s;
+  transition: all linear .2s;
+  border-radius: 4px;
+}
+
+.uk-form input:not([type]), .uk-form input[type=text], .uk-form input[type=password], .uk-form input[type=email], .uk-form input[type=url], .uk-form input[type=search], .uk-form input[type=tel], .uk-form input[type=number], .uk-form input[type=datetime], .uk-form textarea {
+  -webkit-appearance: none;
+}
+
+.uk-form input, .uk-form select, .uk-form textarea {
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 0;
+  font: inherit;
+  color: inherit;
+}
+
+.uk-form-horizontal .uk-form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.uk-form-controls>:last-child {
+  margin-bottom: 0;
+}
+
+.uk-form input:not([type=radio]):not([type=checkbox]), .uk-form select {
+  vertical-align: middle;
+}
+
+.uk-badge {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: none;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,.06);
+  background: #00a8e6;
+  color: #fff;
+}
+
+.text {
+  border: none;
+  color: black;
+  background: white;
+}
+
+
+/* ------------------------------ */
+
+.token-input {
+  border: 1px solid #ddd;
+  padding-left: 6px;
+}
+
+.token-input input[type="text"] {
+  border: none;
+}
+
+.token-input input[type="text"]:focus {
+  background: transparent;
+}
+
+.token {
+  position: relative;
+}
+
+.token input[type="text"] {
+  position: absolute;
+  opacity: 0;
+  transition: none;
+  font-size: 10px;
+}
+
+.token input:focus {
+  opacity: 1;
+  position: relative;
+}
+
+.token input+span {
+  position: relative;
+  white-space: nowrap;
+}
+
+.token input:focus+span {
+  opacity: 0;
+  position: absolute;
+}
+
+/* -------------- */
+
+
