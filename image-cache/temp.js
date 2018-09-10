@@ -17,7 +17,7 @@ localforage.getItem('hana')
     }
   });
 
-// image.setAttribute('src', 'shir.jpg');
+
 
 function getImageAndCache(imageSource) {
   fetch(imageSource)
