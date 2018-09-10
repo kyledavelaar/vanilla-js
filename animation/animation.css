@@ -3,8 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+.longhand {
+  animation-name: animation-name-you-pick;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
 
-#longhand {
+.shorthand {
+  animation: animation-name-you-pick 2s 2s 3 alternate ease-in-out forwards;
+}
+
+/* #longhand {
   animation-name: example;
   animation-duration: 5s;
   animation-timing-function: linear;
@@ -15,7 +28,7 @@
 
 #shorthand {
   animation: move 5s linear 2s infinite alternate;
-}
+} */
 
 
 /* ---------------------------------------- */
