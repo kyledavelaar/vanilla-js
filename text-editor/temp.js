@@ -1,0 +1,1 @@
+kyle.log(kyle.double(4))
