@@ -44,18 +44,20 @@ function TokenInput(input) {
     return value.replace(new RegExp('(^ *)|(' + DELIMITER + '? *$)', 'g'), '');
   };
 
-  let tokenTemplate;
-  tokenTemplate = document.querySelector('template#token') || textTemplate;
-  tokenTemplate = document.querySelector('template#token') || defaultTokenTemplate;
+  var tokenTemplate;
 
   // Create a new Token instance.
   // This assumes that the token template contains a single <input> element,
   // and a single <element class="value"></element> that will contain the
   // label text.
   function Token(value) {
-    console.log('value', value);
+    // console.log('value', value);
     if (value[0] === '#') {
-      console.log('in')
+      tokenTemplate = document.querySelector('template#token') || defaultTokenTemplate;
+      value = value.slice(1)
+      // TODO: search values and show suggestions 
+    } else {
+      tokenTemplate = document.querySelector('template#token') || textTemplate;
     }
     tokenTemplate.content.querySelector('input').value = value;
     tokenTemplate.content.querySelector('.value').innerHTML = value;
