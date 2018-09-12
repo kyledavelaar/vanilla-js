@@ -1,21 +1,30 @@
-svg {
-
+.intLink {
+  cursor: pointer;
 }
 
-circle {
-  transform: scale(1);
+img.intLink {
+  border: 0;
 }
 
-line {
-  /* animation: expand 1s linear; */
-  /* transform: rotate(0deg) translateY(0px); */
+#toolBar1 select {
+  font-size: 10px;
 }
 
-@keyframes expand {
-  0% {
-   transform: translate(67px)
-  }
-  100% {
-    transform: translateY(80px);  
-  }
+#textBox {
+  width: 540px;
+  height: 200px;
+  border: 1px #000000 solid;
+  padding: 12px;
+  overflow: scroll;
+}
+
+#textBox #sourceText {
+  padding: 0;
+  margin: 0;
+  min-width: 498px;
+  min-height: 200px;
+}
+
+#editMode label {
+  cursor: pointer;
 }
