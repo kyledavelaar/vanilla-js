@@ -1,0 +1,21 @@
+svg {
+
+}
+
+circle {
+  transform: scale(1);
+}
+
+line {
+  /* animation: expand 1s linear; */
+  /* transform: rotate(0deg) translateY(0px); */
+}
+
+@keyframes expand {
+  0% {
+   transform: translate(67px)
+  }
+  100% {
+    transform: translateY(80px);  
+  }
+}
