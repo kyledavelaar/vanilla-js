@@ -13,7 +13,9 @@ localforage.getItem('hana')
       image.setAttribute('src', hana);
     } else {
       // use jpg and set it in cache
-      getImageAndCache("shir.jpg");
+      // const src = "shir.jpg"
+      const src = 'https://doc-10-bo-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/mh7ijp68o0sssfi5ndv6gcr54g7tr9rq/1537120800000/01423415735413483280/*/1KbcHeseBJuuzCskyxDx-yAxo1ZozmVpV'
+      getImageAndCache(src);
     }
   });
 
