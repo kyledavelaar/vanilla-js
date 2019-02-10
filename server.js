@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-    
+
+const PORT = 4444;
 const folder = 'image-cache'
 
 app.use(express.static(path.join(__dirname, folder)));
@@ -14,12 +15,14 @@ app.use(function (req, res, next) {
   next();
 });
 
+
 app.get('/', function(req, res) {
-    console.log('server running at 8000')
     res.sendFile(path.join(__dirname + '/' + folder + '/index.html'));
 });
 
 
-app.listen(8000);
+app.listen(PORT, () => {
+  console.log('Listening on ', PORT);
+});
 
 module.exports = app;
